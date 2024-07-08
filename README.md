@@ -46,7 +46,7 @@ This repository is developed and tested on
 - Conda 4.9.2
 - CUDA 11.4
 - Python 3.7.7
-- PyTorch 1.5.0
+- PaddlePaddle 2.0.0
 
 ## Environment Setup
 * Required environment is presented in the 'FIFO.yaml' file
@@ -84,9 +84,3 @@ Training FIFO
 ```bash
 (fifo) ~/fifo$ python main.py --file-name 'FIFO_model' --restore-from PRETRAINED_SEG_MODEL_PATH --restore-from-fogpass PRETRAINED_FILTER_PATH --modeltrain 'train'
 ```
-
-
-## Acknowledgments
-Our code is based on [AdaptSegNet](https://github.com/wasidennis/AdaptSegNet), [RefineNet-lw](https://github.com/DrSleep/light-weight-refinenet), and [Pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning).
-We also thank [Christos Sakaridis](http://people.ee.ethz.ch/~csakarid/) for sharing [datasets](http://people.ee.ethz.ch/~csakarid/Model_adaptation_SFSU_dense/) and code of [CMAda](https://arxiv.org/pdf/1901.01415.pdf).
-If you use our model, please consider citing them as well.
