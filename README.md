@@ -1,30 +1,7 @@
 # FIFO: Learning Fog-invariant Features for Foggy Scene Segmentation
 
-### [Project Page](http://cvlab.postech.ac.kr/research/FIFO/) | [Paper](https://arxiv.org/abs/2204.01587)
-This repo is the official implementation of [**CVPR 2022 Oral, Best Paper Finalist**] paper: "[**FIFO**: Learning Fog-invariant Features for Foggy Scene Segmentation](https://arxiv.org/abs/2204.01587)".
-
-> [FIFO: Learning Fog-invariant Features for Foggy Scene Segmentation](https://arxiv.org/abs/2204.01587)     
-> [Sohyun Lee](https://sohyun-l.github.io)<sup>1</sup>, Taeyoung Son<sup>2</sup>, [Suha Kwak](http://cvlab.postech.ac.kr/~suhakwak/)<sup>1</sup>\
-> POSTECH<sup>1</sup>, NALBI<sup>2</sup>\
-> accept to CVPR 2022 as an oral presentation 
-
-![Overall_architecture](https://user-images.githubusercontent.com/57887512/161761968-436766d9-363d-463d-b8b3-f48ba2a2a949.png)
-
-
 ## Overview
 Robust visual recognition under adverse weather conditions is of great importance in real-world applications. In this context, we propose a new method for learning semantic segmentation models robust against fog. Its key idea is to consider the fog condition of an image as its style and close the gap between images with different fog conditions in neural style spaces of a segmentation model. In particular, since the neural style of an image is in general affected by other factors as well as fog, we introduce a fog-pass filter module that learns to extract a fog-relevant factor from the style. Optimizing the fog-pass filter and the segmentation model alternately gradually closes the style gap between different fog conditions and allows to learn fog-invariant features in consequence. Our method substantially outperforms previous work on three real foggy image datasets. Moreover, it improves performance on both foggy and clear weather images, while existing methods often degrade performance on clear scenes.
-
-## Citation
-If you find our code or paper useful, please consider citing our paper:
-
-```BibTeX
-@inproceedings{lee2022fifo,
-  author    = {Sohyun Lee and Taeyoung Son and Suha Kwak},
-  title     = {FIFO: Learning Fog-invariant Features for Foggy Scene Segmentation},
-  booktitle = {Proceedings of the {IEEE/CVF} Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year      = {2022}
-}
-```
 
 ## Experimental Results
 ![Main_qual](https://user-images.githubusercontent.com/57887512/163107476-7e70cebe-6b38-497f-b5bd-f8d6979a8fb0.png)
